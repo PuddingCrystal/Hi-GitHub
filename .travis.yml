@@ -1,11 +1,6 @@
 language: php
 php:
-  -5.0
-  -5.1
-before_script:
-  -composer install
-script:
-  -php vendor/bin/codecept run
-cache:
-  directories:
-    -vendor
+  - '5.6'
+  - '7.1'
+  - hhvm # on Trusty only
+  - nightly
